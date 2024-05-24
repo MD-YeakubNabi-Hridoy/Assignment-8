@@ -1,7 +1,7 @@
 [
   {
     "bookId": "1",
-    "bookName": "The Great Gatsby",
+    "bookName": "Percu Jackson",
     "author": "F. Scott Fitzgerald",
     "image": "/src/assets/Book_1.jpg",
     "review": "A compelling exploration of the American Dream in the Roaring Twenties.",
@@ -14,7 +14,7 @@
   },
   {
     "bookId": "2",
-    "bookName": "To Kill a Mockingbird",
+    "bookName": "A Cat Named Teddy",
     "author": "Harper Lee",
     "image": "/src/assets/Book_2.jpg",
     "review": "A profound novel that examines racism and moral growth in the Deep South.",
@@ -27,7 +27,7 @@
   },
   {
     "bookId": "3",
-    "bookName": "1984",
+    "bookName": "Okka Boka",
     "author": "George Orwell",
     "image": "/src/assets/Book_3.jpg",
     "review": "A dystopian novel that critiques totalitarianism and extreme political ideology.",
@@ -40,7 +40,7 @@
   },
   {
     "bookId": "4",
-    "bookName": "Pride and Prejudice",
+    "bookName": "Story Book",
     "author": "Jane Austen",
     "image": "/src/assets/Book_4.jpg",
     "review": "A timeless romantic novel that delves into themes of love and social standing.",
@@ -53,7 +53,7 @@
   },
   {
     "bookId": "5",
-    "bookName": "The Hobbit",
+    "bookName": "Henry and Hanna",
     "author": "J.R.R. Tolkien",
     "image": "/src/assets/Book_5.jpg",
     "review": "An enchanting fantasy adventure that serves as a prelude to the Lord of the Rings.",
@@ -66,7 +66,7 @@
   },
   {
     "bookId": "6",
-    "bookName": "The Catcher in the Rye",
+    "bookName": "Harry Porter",
     "author": "J.D. Salinger",
     "image": "/src/assets/Book_6.jpg",
     "review": "A novel that delves into teenage angst and alienation in post-war America.",
@@ -79,7 +79,7 @@
   },
   {
     "bookId": "7",
-    "bookName": "Brave New World",
+    "bookName": "Becoming Magical",
     "author": "Aldous Huxley",
     "image": "/src/assets/Book_7.jpg",
     "review": "A futuristic society where technology and conditioning control every aspect of life.",
@@ -92,11 +92,11 @@
   },
   {
     "bookId": "8",
-    "bookName": "The Lord of the Rings",
+    "bookName": "Magic Whithin",
     "author": "J.R.R. Tolkien",
     "image": "/src/assets/Book_8.jpg",
     "review": "An epic fantasy trilogy that follows the quest to destroy the One Ring.",
-    "totalPages": 1178,
+    "totalPages": 117,
     "rating": 4.9,
     "category": "Fantasy",
     "tags": ["Fantasy", "Epic"],
@@ -105,7 +105,7 @@
   },
   {
     "bookId": "9",
-    "bookName": "The Alchemist",
+    "bookName": "Lapvona",
     "author": "Paulo Coelho",
     "image": "/src/assets/Book_9.jpg",
     "review": "A philosophical tale about pursuing one's dreams and personal legend.",
