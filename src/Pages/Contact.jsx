@@ -9,7 +9,6 @@ const Contact = () => {
                         <h2 className="text-4xl font-bold leading-tight lg:text-5xl">Let's talk!</h2>
                         <div className="dark:text-gray-600">Vivamus in nisl metus? Phasellus.</div>
                     </div>
-                    <img src="assets/svg/doodle.svg" alt="" className="p-6 h-52 md:h-64" />
                 </div>
                 <form noValidate="" className="space-y-6">
                     <div>

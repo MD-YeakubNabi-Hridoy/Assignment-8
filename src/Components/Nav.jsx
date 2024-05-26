@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 const Nav = () => {
     return (
         <div className='mt-5 '>
-            <div className="navbar flex flex-col lg:flex-row bg-base-100">
+            <div className="navbar flex gap-2 bg-base-100">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -16,7 +16,7 @@ const Nav = () => {
                             <NavLink to={'/pageread'}>Page to Read</NavLink>
                         </ul>
                     </div>
-                    <a className="font-bold text-3xl cursor-pointer">Book Vibe</a>
+                    <a className="font-bold text-2xl lg:text-4xl cursor-pointer">Book Vibe</a>
                 </div>
                 <div className="navbar-center hidden lg:flex justify-evenly">
                     <ul className="menu menu-horizontal px-1 text-lg flex gap-8 item-center">
@@ -27,9 +27,9 @@ const Nav = () => {
                         <NavLink to={'/contact'} className=  {({isActive}) => isActive ? 'px-3 py-1 font-semibold border-2 border-green-300 rounded-lg' : 'px-3 py-1'}>Contact</NavLink>
                     </ul>
                 </div>
-                <div className="navbar-end flex gap-8">
-                    <button className="btn bg-green-400 text-lg text-white">Sign in</button>
-                    <button className="btn bg-blue-300 text-lg text-white">Sign Up</button>
+                <div className="navbar-end flex gap-3 lg:gap-8">
+                    <button className="btn bg-green-400 text-sm lg:text-lg text-white">Sign in</button>
+                    <button className="btn bg-blue-300 text-sm lg:text-lg text-white">Sign Up</button>
                 </div>
             </div>
         </div>
