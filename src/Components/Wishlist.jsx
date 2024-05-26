@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import {getStoredWishlist } from '../Utility/LocalStorage';
 import WishListCard from './WishListCard';
 
@@ -13,7 +13,7 @@ const Wishlist = () => {
     return (
         <div className='mt-10'>
             {
-                wishList.map(wish => <WishListCard key={wishList.bookId} wish={wish}></WishListCard>)
+                wishList.map(wish => <WishListCard key={wish.bookId} wish={wish}></WishListCard>)
             }
         </div>
     );

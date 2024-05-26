@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Bar, BarChart, Cell, XAxis, YAxis } from 'recharts';
 import { getStoredReadBook } from '../Utility/LocalStorage';
 import { getPath } from '../Utility/path';
@@ -11,9 +11,7 @@ const ReadChart = () => {
     }, [])
 
     const TriangleBar = (props) => {
-        const {
-            fill, x, y, width, height,
-        } = props;
+        const { fill, x, y, width, height } = props;
 
         return <path d={getPath(x, y, width, height)} stroke="none" fill={fill} />;
     };
@@ -26,8 +24,8 @@ const ReadChart = () => {
 
         <div className='flex justify-center mt-10 items-center '>
             <BarChart width={900} height={550} data={data}>
-                <XAxis dataKey="bookName" />
-                <YAxis />
+                <XAxis dataKey="bookName" className='text-lg font-semibold'/>
+                <YAxis className='text-lg font-semibold'/>
                 <Bar dataKey="totalPages" fill="#8884d8" shape={<TriangleBar />} label={renderCustomBarLabel}>
                     {data.map((entry, index) => (
                         <Cell key={`cell-${index}`} fill={colors[index % 20]} />

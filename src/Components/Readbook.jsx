@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import  { useEffect, useState } from 'react';
 import { getStoredReadBook } from '../Utility/LocalStorage';
 import ReadListCard from './ReadListCard';
 
@@ -13,7 +13,7 @@ const Readbook = () => {
     return (
         <div className='my-10'>
             {
-                readList.map(read => <ReadListCard key={readList.bookId} readCard={read}></ReadListCard>)
+                readList.map(read => <ReadListCard key={read.bookId} readCard={read}></ReadListCard>)
             }
         </div>
     );
