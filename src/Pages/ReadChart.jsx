@@ -8,8 +8,10 @@ const ReadChart = () => {
     useEffect(() => {
         const storedData = getStoredReadBook();
         setData(storedData);
-    }, [])
-
+    }, []);
+     
+    // key={`cell-${index}`}
+    // console.log(data);
     const TriangleBar = (props) => {
         const { fill, x, y, width, height } = props;
 
@@ -24,11 +26,11 @@ const ReadChart = () => {
 
         <div className='flex justify-center mt-10 items-center '>
             <BarChart width={900} height={550} data={data}>
-                <XAxis dataKey="bookName" className='text-lg font-semibold'/>
-                <YAxis className='text-lg font-semibold'/>
+                <XAxis dataKey="bookName" />
+                <YAxis />
                 <Bar dataKey="totalPages" fill="#8884d8" shape={<TriangleBar />} label={renderCustomBarLabel}>
                     {data.map((entry, index) => (
-                        <Cell key={`cell-${index}`} fill={colors[index % 20]} />
+                        <Cell key={entry.bookId} fill={colors[index % 20]} />
                     ))}
                 </Bar>
             </BarChart>
