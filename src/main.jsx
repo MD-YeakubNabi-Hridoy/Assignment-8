@@ -9,6 +9,10 @@ import Home from './Pages/Home.jsx'
 import Contact from './Pages/Contact.jsx'
 import Blog from './Pages/Blog.jsx'
 import BookDetails from './Components/BookDetails.jsx'
+import Readbook from './Components/Readbook.jsx'
+import Wishlist from './Components/Wishlist.jsx'
+import { Toaster } from 'react-hot-toast';
+
 
 const router = createBrowserRouter([
   {
@@ -27,7 +31,17 @@ const router = createBrowserRouter([
       },
       {
         path: '/listedbooks',
-        element: <ListedBooks></ListedBooks>
+        element: <ListedBooks></ListedBooks>,
+        children:[
+          {
+            index: true,
+            element: <Readbook></Readbook>
+          },
+          {
+            path: 'wishlist',
+            element: <Wishlist></Wishlist>
+          }
+        ]
       },
       {
         path: '/pageread',
@@ -48,5 +62,6 @@ const router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById('root')).render(
   <>
     <RouterProvider router={router}></RouterProvider>
+    <Toaster></Toaster>
   </>
 )

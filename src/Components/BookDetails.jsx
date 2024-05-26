@@ -1,5 +1,6 @@
-import React from 'react';
 import { useLoaderData, useParams } from 'react-router-dom';
+import { addToReadBook, addToWishlist} from '../Utility/LocalStorage';
+
 
 const BookDetails = () => {
 
@@ -8,6 +9,16 @@ const BookDetails = () => {
     const idInt = parseInt(id);
     const book = bookDetails.find(book => book.bookId === id);
     const { bookName, author, image, rating, category, tags, review, totalPages, publisher, yearOfPublishing } = book;
+
+
+
+    const notify1 = () => {
+        addToReadBook(book);
+    }
+    const notify2 = () => {
+        addToWishlist(book);
+    };
+
     return (
         <div className='mt-16'>
             <div className='grid grid-cols-1 lg:grid-cols-2'>
@@ -45,8 +56,8 @@ const BookDetails = () => {
                     </div>
 
                     <div>
-                        <button className='px-5 py-2 text-lg font-semibold border-2 rounded-xl mr-5'>Read</button>
-                        <button className='px-5 py-2 text-lg text-white font-semibold bg-blue-400 rounded-xl'>Wishlist</button>
+                        <button onClick={notify1} className='px-5 py-2 text-lg font-semibold border-2 rounded-xl mr-5'>Read</button>
+                        <button onClick={notify2} className='px-5 py-2 text-lg text-white font-semibold bg-blue-400 rounded-xl'>Wishlist</button>
                     </div>
                 </div>
             </div>
