@@ -1,4 +1,3 @@
-import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
@@ -14,6 +13,7 @@ import Wishlist from './Components/Wishlist.jsx'
 import { Toaster } from 'react-hot-toast';
 import { Root } from 'postcss'
 import Error from './Pages/Error.jsx'
+import React from 'react'
 
 
 const router = createBrowserRouter([
