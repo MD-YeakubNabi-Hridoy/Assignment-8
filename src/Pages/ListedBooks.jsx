@@ -7,7 +7,7 @@ const ListedBooks = () => {
     const [tabIndex, setTabIndex] = useState(0);
 
     return (
-        <div className='mt-10'>
+        <div className='w-4/5 mx-auto mt-10'>
             <h1 className='text-4xl font-bold text-center bg-slate-100 p-5 rounded-xl'>Books</h1>
             <div className='flex justify-center my-5'>
             <div className="dropdown dropdown-hover">

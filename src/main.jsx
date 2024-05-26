@@ -12,9 +12,16 @@ import BookDetails from './Components/BookDetails.jsx'
 import Readbook from './Components/Readbook.jsx'
 import Wishlist from './Components/Wishlist.jsx'
 import { Toaster } from 'react-hot-toast';
+import { Root } from 'postcss'
+import Error from './Pages/Error.jsx'
 
 
 const router = createBrowserRouter([
+  {
+    // path: '/',
+    element: <Root />,
+    errorElement: <Error/>,
+  },
   {
     path: '/',
     element: <MainLayout></MainLayout>,
@@ -56,12 +63,12 @@ const router = createBrowserRouter([
         element: <Contact></Contact>
       }
     ]
-  }
+  },
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <>
+  <React.StrictMode>
     <RouterProvider router={router}></RouterProvider>
     <Toaster></Toaster>
-  </>
+  </React.StrictMode>
 )

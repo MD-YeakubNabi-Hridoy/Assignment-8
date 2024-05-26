@@ -20,10 +20,10 @@ const BookDetails = () => {
     };
 
     return (
-        <div className='mt-16'>
+        <div className='mt-16 mb-5'>
             <div className='grid grid-cols-1 lg:grid-cols-2'>
                 <div className='bg-slate-100 p-10 mx-auto rounded-2xl'>
-                    <img className='w-72 h-96' src={image} alt="" />
+                    <img className='w-72 h-96 mt-4' src={image} alt="" />
                 </div>
                 <div>
                     <h1 className='text-5xl font-bold '>{bookName}</h1>

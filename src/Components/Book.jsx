@@ -8,8 +8,8 @@ const Books = ({ book }) => {
     const {bookId, bookName, author, image, rating, category, tags } = book;
 
     return (
-        <div className='mt-10 mx-auto'>
-            <Link to={`/book/${bookId}`}>
+        <div className=' mx-auto'>
+            <Link to={`/book/${bookId}`} >
                <div  className=" p-6 rounded-2xl border-2 w-96 ">
                 <div className='flex justify-center bg-slate-100 rounded-xl p-6'>
                     <img src={image} alt="" className=" object-cover object-center w-52 rounded-md h-72" />
