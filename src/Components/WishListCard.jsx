@@ -20,8 +20,8 @@ const WishListCard = ({ wish }) => {
                             <p className="text-lg text-gray-800 mt-2">{author}</p>
                             <div className='flex flex-col lg:flex-row lg:gap-8 lg:my-5 lg:items-center'>
                                 <div className="flex items-center">
-                                    <span className='text-lg font-semibold'>Tags:</span>
-                                    <span className="block text-lg tracking-widest text-green-500 px-3 py-2 rounded-xl lg:bg-slate-100">{tags[0]}</span>
+                                    <p className='text-lg font-semibold'>Tags:</p>
+                                    <span className="block text-lg lg:mx-5 tracking-widest text-green-500 px-3 py-2 rounded-xl lg:bg-slate-100">{tags[0]}</span>
                                     <span className="block text-lg tracking-widest text-green-500 px-3 py-2 rounded-xl lg:bg-slate-100">{tags[1]}</span>
                                 </div>
                                 <div className="flex items-center gap-1">

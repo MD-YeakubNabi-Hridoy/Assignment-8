@@ -22,7 +22,7 @@ const ReadListCard = ({ readCard }) => {
                             <div className='flex flex-col lg:flex-row lg:gap-8 lg:my-5 lg:items-center'>
                                 <div className="flex items-center">
                                     <span className='text-lg font-semibold'>Tags:</span>
-                                    <span className="block text-lg tracking-widest text-green-500 px-3 py-2 rounded-xl lg:bg-slate-100">{tags[0]}</span>
+                                    <span className="block lg:mx-5 text-lg tracking-widest text-green-500 px-3 py-2 rounded-xl lg:bg-slate-100">{tags[0]}</span>
                                     <span className="block text-lg tracking-widest text-green-500 px-3 py-2 rounded-xl lg:bg-slate-100">{tags[1]}</span>
                                 </div>
                                 <div className="flex items-center gap-1">

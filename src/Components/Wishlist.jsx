@@ -9,7 +9,7 @@ const Wishlist = () => {
         const storedWishBook = getStoredWishlist;
         setWishList(storedWishBook);
     },[])
-    console.log(wishList);
+    // console.log(wishList);
     return (
         <div className='mt-10'>
             {
