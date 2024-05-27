@@ -13,7 +13,7 @@ const Readbook = () => {
     return (
         <div className='my-10'>
             {
-                readList.map(read => <ReadListCard key={read.bookId} readCard={read}></ReadListCard>)
+                Array.isArray(readList) && readList?.map(read => <ReadListCard key={read.bookId} readCard={read}></ReadListCard>)
             }
         </div>
     );

@@ -13,7 +13,7 @@ const Wishlist = () => {
     return (
         <div className='mt-10'>
             {
-                wishList.map(wish => <WishListCard key={wish.bookId} wish={wish}></WishListCard>)
+                Array.isArray(wishList) && wishList?.map(wish => <WishListCard key={wish.bookId} wish={wish}></WishListCard>)
             }
         </div>
     );

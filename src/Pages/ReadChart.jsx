@@ -29,7 +29,7 @@ const ReadChart = () => {
                 <XAxis dataKey="bookName" />
                 <YAxis />
                 <Bar dataKey="totalPages" fill="#8884d8" shape={<TriangleBar />} label={renderCustomBarLabel}>
-                    {data.map((entry, index) => (
+                    {Array.isArray(data) && data?.map((entry, index) => (
                         <Cell key={entry.bookId} fill={colors[index % 20]} />
                     ))}
                 </Bar>
