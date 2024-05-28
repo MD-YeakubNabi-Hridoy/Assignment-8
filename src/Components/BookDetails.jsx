@@ -7,8 +7,8 @@ const BookDetails = () => {
     const bookDetails = useLoaderData();
     const { id } = useParams();
     const idInt = parseInt(id);
-    const book = bookDetails.find(book => book.bookId === id);
-    const { bookName, author, image, rating, category, tags, review, totalPages, publisher, yearOfPublishing } = book;
+    const book =bookDetails.find(book => parseInt(book.bookId) === idInt);
+    const {  image, bookName, author, rating, category, tags, review, totalPages, publisher, yearOfPublishing } = book;
 
 
 

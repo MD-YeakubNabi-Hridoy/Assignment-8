@@ -16,7 +16,7 @@ const getStoredReadBook = () => {
 const addToReadBook  = book =>{
 
     const storedReadBook = getStoredReadBook();
-    const Exist = storedReadBook.find(b => b.bookId === book.bookId);
+    const Exist = Array.isArray(storedReadBook) && storedReadBook?.find(b => b.bookId === book.bookId);
     if(!Exist){
         storedReadBook.push(book);
         localStorage.setItem('read-the-book', JSON.stringify(storedReadBook));
@@ -42,7 +42,7 @@ const getStoredWishlist = () => {
 
 const addToWishlist = book => {
     const storedWishlist = getStoredWishlist();
-    const Exists = storedWishlist.find(bw => bw.bookId === book.bookId);
+    const Exists = Array.isArray(storedWishlist) && storedWishlist?.find(bw => bw.bookId === book.bookId);
     if(!Exists){
         storedWishlist.push(book);
         localStorage.setItem('add-to-wishlist', JSON.stringify(storedWishlist));

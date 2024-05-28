@@ -11,7 +11,7 @@ const ListedBooks = () => {
             <h1 className='text-4xl font-bold text-center bg-slate-100 p-5 rounded-xl'>Books</h1>
             <div className='flex justify-center my-5'>
             <div className="dropdown dropdown-hover">
-                <div tabIndex={0} role="button" className="m-1 px-7 py-3 text-lg font-bold bg-green-500 text-white rounded-xl w-52 text-center">Click</div>
+                <div tabIndex={0} role="button" className="m-1 px-7 py-3 text-lg font-bold bg-green-500 text-white rounded-xl w-52 text-center">Sort by</div>
                 <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
                     <li className='text-lg font-medium text-center'><a>Rating</a></li>
                     <li className='text-lg font-medium text-center'><a>Number Of Pages</a></li>
